@@ -1,3 +1,4 @@
+from audioop import reverse
 from django.db import models
 
 # Create your models here.
@@ -20,10 +21,9 @@ class Category(models.Model):
     #     return super().__str__(self.name)
     
     # TODO follow up this code below
-    # def get_absolute_url(self):
-    #     return ('catalog_category', (), {'category_slug': self.slug})
-    
-    # get_absolute_url = models.permalink(get_absolute_url)
+    def get_absolute_url(self):
+        return reverse('catalog_category', kwargs={'category_slug': self.slug})
+
 
 class Product(models.Model):
     name = models.CharField(max_length=50)
@@ -55,6 +55,9 @@ class Product(models.Model):
     def __str__(self) -> str:
         return super().__str__(self.name)
 
+    def get_absolute_url(self):
+        return reverse('catalog_product', kwargs={'product_slug': self.slug})
+    
     def sale_price(self):
         if self.old_price > self.price:
             return self.price
