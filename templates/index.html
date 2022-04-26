@@ -1,0 +1,286 @@
+{% extends "base.html" %}
+
+{% block slideshow %}
+<!-- ==== MAIN PAGE SLIDE SHOW ==== -->
+<section id="slideshow" class="m-auto md:h-[88%] xs:h-[44%] swiper mySwiper">
+    <div class="swiper-wrapper relative z-0">
+        <div class="swiper-slide">
+            <img src="new/pexels-sourav-mishra-1149831.jpg" alt="" class="bg-top" />
+            <div
+                class="absolute inset-0 flex flex-col justify-center items-center md:items-start z-20 px-14 sm:px-16 lg:px-24">
+                <p
+                    class="text-left text-gray-50 capitalize font-bold text-2xl lg:text-3xl underline underline-offset-8 decoration-lime-500">
+                    Landing page</p>
+                <p class="text-left text-gray-100 font-semibold text-sm md:text-lg lg:text-xl mt-4 sm:mt-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ipsum? Quae quam est
+                    officia animi quos, corporis facere rerum pariatur amet, laudantium vitae veritatis
+                    molestiae doloremque et, inventore libero fugiat...</p>
+                <button
+                    class="transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-105 bg-gradient-to-r from-lime-400 to-green-500 hover:from-pink-500 hover:to-yellow-500 font-semibold text-lg mt-4 md:mt-6 lg:mt-8 px-2 py-2 md:px-9 md:py-3 lg:px-11 rounded-xl hover:border-lime-300 uppercase">Find
+                    Your Car &rarr;
+                </button>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <img src="/new/pexels-albin-berlin-919073.jpg" alt="">
+            <div
+                class="absolute inset-0 flex flex-col justify-center items-center md:items-start z-20 px-14 sm:px-16 lg:px-24">
+                <p
+                    class="text-left text-gray-50 capitalize font-bold text-2xl lg:text-3xl underline underline-offset-8 decoration-lime-500">
+                    Landing page</p>
+                <p class="text-left text-white bg-transparent font-bold text-sm md:text-lg lg:text-xl mt-4 sm:mt-2">
+                    Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Commodi, ipsum? Quae quam est officia animi quos, corporis facere
+                    rerum pariatur amet,
+                    laudantium vitae veritatis molestiae doloremque et, inventore libero fugiat...</p>
+                <button
+                    class="transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-105 bg-gradient-to-r from-lime-400 to-green-500 hover:from-pink-500 hover:to-yellow-500 font-semibold text-lg mt-4 md:mt-6 lg:mt-8 px-2 py-2 md:px-9 md:py-3 lg:px-11 rounded-xl hover:border-lime-300 uppercase">Find
+                    Your Car &rarr;
+                </button>
+            </div>
+        </div>
+        <div class="swiper-slide relative">
+            <img src="new/pexels-sourav-mishra-1149831.jpg" alt="">
+            <div
+                class="absolute inset-0 flex flex-col justify-center items-center md:items-start z-20 px-14 sm:px-16 lg:px-24">
+                <p
+                    class="text-left text-gray-50 capitalize font-bold text-2xl lg:text-3xl underline underline-offset-8 decoration-lime-500">
+                    Landing page</p>
+                <p class="text-left text-white bg-transparent font-bold text-sm md:text-lg lg:text-xl mt-4 sm:mt-2">
+                    Lorem ipsum
+                    dolor sit amet consectetur
+                    adipisicing elit. Commodi, ipsum? Quae quam est officia animi quos, corporis facere
+                    rerum pariatur amet,
+                    laudantium vitae veritatis molestiae doloremque et, inventore libero fugiat...</p>
+                <button
+                    class="transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-105 bg-gradient-to-r from-lime-400 to-green-500 hover:from-pink-500 hover:to-yellow-500 font-semibold text-lg mt-4 md:mt-6 lg:mt-8 px-2 py-2 md:px-9 md:py-3 lg:px-11 rounded-xl hover:border-lime-300 uppercase">Find
+                    Your Car &rarr;
+                </button>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <img src="new/pexels-torsten-dettlaff-70912.jpg" alt="">
+            <div
+                class="absolute inset-0 flex flex-col justify-center items-center md:items-start z-20 px-14 sm:px-16 lg:px-24">
+                <p
+                    class="text-left text-gray-50 capitalize font-bold text-2xl lg:text-3xl underline underline-offset-8 decoration-lime-500">
+                    Landing page</p>
+                <p class="text-left text-white bg-transparent font-bold text-sm md:text-lg lg:text-xl mt-4 sm:mt-2">
+                    Lorem ipsum
+                    dolor sit amet consectetur
+                    adipisicing elit. Commodi, ipsum? Quae quam est officia animi quos, corporis facere
+                    rerum pariatur amet,
+                    laudantium vitae veritatis molestiae doloremque et, inventore libero fugiat...</p>
+                <button
+                    class="transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-105 bg-gradient-to-r from-lime-400 to-green-500 hover:from-pink-500 hover:to-yellow-500 font-semibold text-lg mt-4 md:mt-6 lg:mt-8 px-2 py-2 md:px-9 md:py-3 lg:px-11 rounded-xl hover:border-lime-300 uppercase">Find
+                    Your Car &rarr;
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
+    <div class="swiper-pagination"></div>
+</section>
+<!-- ENDOF MAINPAGE SLIDESHOW -->
+{% endblock %}
+
+{% block PotentialCustomers %} 
+<section class="md:hidden">
+    <div class="container px-5 mx-auto">
+        <div class="flex flex-col w-full mb-7 text-center">
+            <span class="mt-6 text-2xl font-medium tracking-wide text-lime-500 uppercase">
+                <a href="#" class="font-bold uppercase">Our customers</a>
+            </span>
+        </div>
+        <div class="mx-auto text-center">
+            <div class="grid grid-cols-3 gap-2 mx-auto">
+                <div>
+                    <img class="h-8 mx-auto"
+                        src="https://d33wubrfki0l68.cloudfront.net/5a364f2e7cfeadd0f603cdfeda83f5cd0509770d/3f0ae/images/logos/logoone.svg"
+                        alt="Figma">
+                </div>
+                <div>
+                    <img class="h-8 mx-auto"
+                        src="https://d33wubrfki0l68.cloudfront.net/ab0d1eeefb9cddb55f05f1601b2ae3fbae9317a9/5bfbe/images/logos/logotwo.svg"
+                        alt="Framer">
+                </div>
+                <div>
+                    <img class="h-8 mx-auto"
+                        src="https://d33wubrfki0l68.cloudfront.net/2fea2d550675d7cf3bb77a515487bce6c086051b/951f5/images/logos/logothree.svg"
+                        alt="Sketch ">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block ExecutiveCars %}
+<section id="executive_cars_section" class="h-screen snap-always snap-center">
+    <div
+        class="container h-1/6 flex flex-row items-center justify-between text-center m-auto md:h-1/4 border-2 border-green-500">
+        <div class="font-sans text-3xl md:text-5xl mx-10 md:mx-16 lg:mx-0 xl:mx-14 font-bold">
+            Executive Choices
+        </div>
+
+        <div class="font-sans mx-10 md:mx-16 lg:mx-0 xl:mx-14 items-baseline px-6 py-3">
+            <button type="submit"
+                class="text-base font-medium md:text-lg rounded bg-gradient-to-r from-lime-300 to-green-400 px-5 py-2">Show
+                more...</button>
+        </div>
+    </div>
+
+    <div class="h-5/6 md:h-2/4 mx-5 md:mx-0">
+        <div
+            class="flex flex-wrap h-full w-auto mx-10 md:mx-16 lg:mx-0 xl:mx-14 overflow-x-auto md:overflow-y-auto touch-pan-y custom-scrollbar border-2 border-yellow-400">
+            <div class="lg:w-1/5 md:w-1/2 w-full p-6">
+                <a class="block relative h-40 rounded overflow-hidden">
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+                        src="/images/new/harrier.jpg">
+                </a>
+                <div class="mt-4">
+                    <h2 class="text-gray-500 text-xs tracking-widest title-font mb-1">SEDAN</h3>
+                        <h1 class="text-gray-900 title-font text-base font-bold uppercase">Toyota
+                    </h2>
+                    <h1 class="text-gray-900 title-font text-base font-medium">Corolla 5vsc</h2>
+                        <p class="mt-1">Tsh. 12,000,000</p>
+                </div>
+            </div>
+            <div class="lg:w-1/5 md:w-1/2 w-full p-6 ">
+                <a class="block relative h-40 rounded overflow-hidden">
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+                        src="/images/new/harrier.jpg">
+                </a>
+                <div class="mt-4">
+                    <h2 class="text-gray-500 text-xs tracking-widest title-font mb-1">SEDAN</h3>
+                        <h1 class="text-gray-900 title-font text-base font-bold uppercase">Toyota
+                    </h2>
+                    <h1 class="text-gray-900 title-font text-base font-medium">Corolla 5vsc</h2>
+                        <p class="mt-1">Tsh. 12,000,000</p>
+                </div>
+            </div>
+            <div class="lg:w-1/5 md:w-1/2 w-full p-6 ">
+                <a class="block relative h-40 rounded overflow-hidden">
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+                        src="/images/new/harrier.jpg">
+                </a>
+                <div class="mt-4">
+                    <h2 class="text-gray-500 text-xs tracking-widest title-font mb-1">SEDAN</h3>
+                        <h1 class="text-gray-900 title-font text-base font-bold uppercase">Toyota
+                    </h2>
+                    <h1 class="text-gray-900 title-font text-base font-medium">Corolla 5vsc</h2>
+                        <p class="mt-1">Tsh. 12,000,000</p>
+                </div>
+            </div>
+            <div class="lg:w-1/5 md:w-1/2 w-full p-6 ">
+                <a class="block relative h-40 rounded overflow-hidden">
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+                        src="/images/new/harrier.jpg">
+                </a>
+                <div class="mt-4">
+                    <h2 class="text-gray-500 text-xs tracking-widest title-font mb-1">SEDAN</h3>
+                        <h1 class="text-gray-900 title-font text-base font-bold uppercase">Toyota
+                    </h2>
+                    <h1 class="text-gray-900 title-font text-base font-medium">Corolla 5vsc</h2>
+                        <p class="mt-1">Tsh. 12,000,000</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="h-1/4"></div>
+</section>
+{% endblock %}
+
+{% block NewArrivals %}
+<section id="New_arrivals_section" class="h-screen border-2 border-yellow-500 snap-always snap-center">
+    <div
+        class="container h-1/6 flex flex-row items-center justify-between text-center m-auto md:h-1/5 border-2 border-cyan-300">
+        <div
+            class="font-sans text-3xl md:text-5xl mx-10 md:mx-16 lg:mx-0 xl:mx-14 border-2 border-purple-500 font-bold">
+            New Arrivals
+        </div>
+
+        <div class="font-sans mx-10 md:mx-16 lg:mx-0 xl:mx-14">
+            <button type="submit"
+                class="text-base font-medium md:text-lg rounded bg-gradient-to-r from-lime-300 to-green-400 px-5 py-2">Show
+                more...</button>
+        </div>
+    </div>
+
+    <div class="h-5/6 md:h-4/5 md:mx-0">
+        <div
+            class="flex flex-wrap border-2 border-pink-500 h-full w-auto mx-10 md:mx-16 lg:mx-0 xl:mx-14 overflow-x-auto md:overflow-y-auto touch-pan-y custom-scrollbar">
+            {% for product in products %}
+            <div class="lg:w-1/5 md:w-1/2 w-full p-6 ">
+                <a class="block relative h-40 rounded overflow-hidden">
+                    <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+                        src="/images/new/harrier.jpg">
+                </a>
+                <div class="mt-4">
+                    <h2 class="text-gray-500 text-xs tracking-widest title-font mb-1">{{ categories.name }}</h3>
+                        <h1 class="text-gray-900 title-font text-base font-bold uppercase">{{ product.brand }}
+                    </h2>
+                    <h1 class="text-gray-900 title-font text-base font-medium">{{ product.prodmodel }}</h2>
+                        <p class="mt-1">Tsh. {{ product.price }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block OurServices %}
+<section class="h-screen border-4 border-red-700">
+    <div
+        class="h-2/6 flex items-center font-sans text-3xl md:text-5xl mx-10 md:mx-16 lg:mx-0 xl:mx-14 font-bold border-2 border-yellow-300">
+        Our Services
+    </div>
+    <div class="h-4/6 container relative w-full px-5 py-12 my-auto md:px-12 mx-auto border-2 border-green-500">
+        <div class="grid grid-cols-1 gap-6 lg:grid-cols-3 mx-2 border-2 border-red-300">
+            <div
+                class="flex flex-col w-full max-w-lg p-8 text-left shadow-lg shadow-gray-400 lg:mx-auto rounded-xl items-center">
+                <span class="iconify inline-block object-cover object-center w-16 h-16 mt-4 rounded-full p-2"
+                    data-icon="ion:car-sport-sharp"></span>
+                <h2 class="mb-4 text-base font-bold tracking-widest text-lime-700 uppercase">
+                    Cars & Vehicle
+                    <!-- <span href="#" class="font-semibold text-gray-200 lg:mb-0">Acme's HR </span> -->
+                </h2>
+                <p class="mx-auto text-base leading-relaxed text-gray-500 text-center"> Get your dream
+                    quality car and
+                    spare parts original from Manufacturers </p>
+            </div>
+
+            <div
+                class="flex flex-col w-full max-w-lg p-8 text-left shadow-lg shadow-gray-400 lg:mx-auto rounded-xl items-center">
+                <span class="iconify inline-block object-cover object-center w-16 h-16 mt-4 rounded-full p-2"
+                    data-icon="fontisto:ship"></span>
+                <h2 class="mb-4 text-base font-bold tracking-widest text-lime-700 uppercase text-center">
+                    Shipping, Clearing & Forwading
+                    <!-- <span href="#" class="font-semibold text-gray-200 lg:mb-0">Acme's HR </span> -->
+                </h2>
+                <p class="mx-auto text-base leading-relaxed text-gray-500 text-center"> Exclusive shipping
+                    services and
+                    door-step delivery to any country</p>
+
+            </div>
+
+            <div
+                class="flex flex-col w-full max-w-lg p-8 text-left shadow-lg shadow-gray-400 lg:mx-auto rounded-xl items-center">
+                <span class="iconify inline-block object-cover object-center w-16 h-16 mt-4 rounded-full p-2"
+                    data-icon="fluent:person-call-20-filled"></span>
+                <h2 class="mb-4 text-base font-bold tracking-widest text-lime-700 uppercase">
+                    Quality Customer Services
+                    <!-- <span href="#" class="font-semibold text-gray-200 lg:mb-0">Acme's HR </span> -->
+                </h2>
+                <p class="mx-auto text-base leading-relaxed text-gray-500 text-center"> 24/7 customer
+                    service response
+                    team </p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
